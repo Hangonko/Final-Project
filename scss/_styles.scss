@@ -1,0 +1,386 @@
+.s-1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-bottom: 100px;
+    .container {
+        
+        margin: 0 auto;
+        @include container($container-width);
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bg-color;
+        
+        
+
+        .Logo {
+            cursor: pointer;
+        }
+
+        & > ul {
+            display: flex;
+            align-items: center;
+            
+            & > li {
+                & > a {
+                    transition: 0.3s;
+                }
+
+                & > a:hover {
+                    font-weight: bold;
+                    color: #19B5FE;
+                    opacity: 100%;
+                    padding: 38px 0;
+                    border-bottom: 4px solid #19B5FE;
+                }
+
+                
+
+                
+            }
+        }
+
+        .nav-links {
+            color: #FFFFFF;
+            margin-right: 60px;
+            font-family: $main-font;
+            font-weight: normal;
+            font-size: 14px;
+            opacity: 60%;
+        }
+
+        .btn-1 {
+            @include button(120px, 44px, solid, 1px, #FFFFFF, transparent, 4px);
+            font-family: $main-font;
+            transition: 0.7s;
+        }
+
+        .btn-1:hover {
+            border: none;
+            font-weight: bold;
+            background-color: #FFFFFF;
+            color: black;
+        }
+    }
+}
+
+.s-2 {
+    margin-top: 100px;
+    .container-2 {
+        @include container($container-width);
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+        
+
+        .left {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 525px;
+            height: 370px;
+
+            & > h1 {
+                @include text(#FFFFFF, $main-font, 50px, bold);
+            }
+
+            & > h2 {
+                @include text(#FFFFFF, $main-font, 28px, medium);
+                opacity: 40%;
+                line-height: 37px
+            }
+
+            & > h3 {
+                @include text(#FFFFFF, $main-font, 14px, normal);
+                line-height: 20px;
+            }
+
+            & > p {
+                @include text(#19B5FE, $main-font, 24px, normal);
+                letter-spacing: 3px;
+            }
+
+            .Buttons {
+                display: flex;
+                align-items: center;
+                .btn-2 {
+                    display: inline-flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 0 30px;
+                    @include button(160px, 44px, none, 0, 0, #19B5FE, 4px);
+                    font-family: $main-font;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-right: 15px;
+                    transition: 0.4s;
+                }
+    
+                .btn-2:hover {
+                    background-color: #FFFFFF;
+                    color: black;
+                }
+    
+                .btn-3 {
+                    display: inline-flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 0 30px;
+                    @include button(160px, 44px, solid, 1px, #FFFFFF, transparent, 4px);
+                    font-family: $main-font;
+                    transition: 0.7s;
+                }
+    
+                .btn-3:hover {
+                    border: none;
+                    font-weight: bold;
+                    background-color: #FFFFFF;
+                    color: black;
+                }
+            }
+        }
+
+        .Header-mouse {
+            display: inline-flex;
+            height: 800px;
+        }
+
+    }
+}
+
+.jumpTo-1 {
+    width: 1px;
+    height: 1px;
+    margin-bottom: 215px;
+}
+
+.Title {
+    @include container($container-width);
+    text-align: center;
+    margin-bottom: 130px;
+    .container-Title {
+        
+        .bg-text {
+            color: #19B5FE;
+            opacity: 15%;
+            font-family: $main-font;
+            font-size: 80px;
+            font-weight: 500;
+            transform: translate(0, 38px);
+        }
+
+        .question {
+            color: #FFFFFF;
+            font-family: $main-font;
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .View-more {
+        vertical-align: center;
+            @include button(120px, 30px, 0, 0, #19B5FE, transparent, 4px);
+            font-family: $main-font;
+            font-size: 14px;
+            letter-spacing: 1px;
+            
+        }
+    }
+}
+
+.s-3 {
+
+    .container-3 {
+        @include container($container-width);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        
+        .cards {
+            cursor: pointer;
+            width: 360px;
+            height: 260px;
+            background-color: #393939;
+            border-radius: 20px;
+
+            .card-photo-1 {
+                transform: translate(0, -85px);
+            }
+
+            .card-text {
+                font-family: $main-font;
+                font-size: 20px;
+                font-weight: bold;
+                color: #FFFFFF;
+                transform: translate(0, -95px);
+            }
+        }
+    }
+}
+
+.jumpTo-2 {
+    width: 1px;
+    height: 1px;
+    margin-bottom: 160px;
+}
+
+.s-4 {
+
+    .container-4 {
+        @include container($container-width);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .box-2 {
+            cursor: pointer;
+            width: 555px;
+            height: 180px;
+            display: flex;
+            background-color: #393939;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .Card-Image {
+            transform: translate(0, -20px);
+            padding-left: 20px;
+        }
+
+        .box-2-text {
+            padding: 35px;
+            .top-text {
+                color: #FFFFFF;
+                margin-bottom: 23px;
+                font-family: $main-font;
+                font-size: 22px;
+                font-weight: 500;
+            }
+    
+            .bottom-text {
+                color: #FFFFFF;
+                font-family: $main-font;
+                font-size: 14px;
+                opacity: 70%;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+.jumpTo-3 {
+    width: 1px;
+    height: 1px;
+    margin-bottom: 230px;
+}
+
+.s-5 {
+
+    .container-5 {
+        @include container($container-width);
+        .carousel-item-cards {
+            display: flex;
+            justify-content: space-between;
+            .carousel-card {
+                cursor: pointer;
+                width: 270px;
+                height: 240px;
+                background-color: #393939;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .carousel-card-image {
+                    padding-top: 30px;
+                    width: 250px;
+                    height: 180px;
+                }
+    
+                .carousel-card-text {
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-family: $main-font;
+                    font-size: 14px;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+        .left-arrow {
+            transform: translate(-70px, 0);
+        }
+
+        .right-arrow {
+            transform: translate(70px, 0);
+        }
+    }
+}
+
+.jumpTo-4 {
+    width: 1px;
+    height: 1px;
+    margin-bottom: 160px;
+}
+
+.s-6 {
+    color: #FFFFFF;
+    font-family: $main-font;
+    .container-6 {
+        @include container($container-width);
+        display: flex;
+        justify-content: space-between;
+        .info {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 200px;
+            height: 288px;
+            margin-right: 220px;
+
+            .contacts-text-top {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .contact-info {
+                display: flex;
+                align-items: center;
+
+                .fa-phone {
+                    color: #19B5FE;
+                }
+
+                .fa-envelope {
+                    color: #19B5FE;
+                }
+
+                .contaxt-info-text {
+                    margin-left: 10px;
+                }
+            }
+
+            .contacts-text-bottom {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .icons-bundle {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                color: #19B5FE;
+            }
+        }
+
+        .forms {
+            display: inline-flex;
+        }
+
+    }
+}
