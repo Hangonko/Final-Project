@@ -335,6 +335,7 @@
         @include container($container-width);
         display: flex;
         justify-content: space-between;
+        margin-bottom: 200px;
         .info {
             display: inline-flex;
             flex-direction: column;
@@ -379,8 +380,96 @@
         }
 
         .forms {
-            display: inline-flex;
+            & > p {
+                margin-bottom: 23px;
+            }
+            .elements {
+                width: 720px;
+                height: 406px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .first-row {
+                    display: flex;
+                    justify-content: space-between;
+        
+                    .input-text {
+                        @include input-text(350px, 52px, #393939, #5a5a5a);
+                        padding: 20px;
+                        border-radius: 4px;
+                        color: #FFFFFF
+                    }
+    
+                    
+                }
+    
+                .subject {
+                    @include input-text(720px, 52px, #393939, #5a5a5a);
+                    padding: 20px;
+                    border-radius: 4px;
+                    color: #FFFFFF
+                }
+
+                .message {
+                    @include input-text(720px, 160px, #393939, #5a5a5a);
+                    resize: none;
+                    padding: 20px;
+                    border-radius: 4px;
+                    color: #FFFFFF
+                }
+
+                .button-center {
+                    display: flex;
+                    justify-content: center;
+                    .submit {
+                        @include button(320px, 44px, 0, 0, #FFFFFF, #19B5FE, 4px);
+                        font-weight: bold;
+                    }
+                }
+            }
+
         }
 
     }
+}
+
+footer {
+    background-color: #111111;
+    z-index: 1;
+    font-family: $main-font;
+    .footer-container {
+        @include container($container-width);
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        border-bottom: 1px solid #6b6b6b;
+        .footer-column {
+            
+            & > p {
+                cursor: pointer;
+                color: #6b6b6b;
+                font-weight: bold;
+                margin-bottom: 38px;
+            }
+
+            & > ul {
+                
+                & > li {
+                    margin-bottom: 30px;
+                }
+            }
+            
+        }
+    }
+
+    a {
+        color: #6b6b6b;
+    }
+
+    .copyright {
+        text-align: center;
+        color: #6b6b6b;
+        padding: 35px 0;
+    }
+    
 }

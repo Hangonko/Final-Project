@@ -20,3 +20,11 @@
     background-color: $btn-bg;
     border-radius: $brdr-radius;
 }
+
+@mixin input-text($input-width, $input-height, $input-bg-color, $input-text-color) {
+    width: $input-width;
+    height: $input-height;
+    border: none;
+    background-color: $input-bg-color;
+    color: $input-text-color;
+}
