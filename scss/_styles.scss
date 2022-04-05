@@ -19,7 +19,23 @@
 
         
         
-        
+        .burger-bar {
+            display: none;
+
+            @media(max-width: 1075px) {
+                display: block;
+            }
+            .burger {
+                font-size: 25px;
+                color: #FFFFFF;
+                cursor: pointer;
+                display: none;
+    
+                @media(max-width: 1075px) {
+                    display: block;
+                }
+            }
+        }
         
         
 
@@ -112,17 +128,29 @@
 
             & > h1 {
                 @include text(#FFFFFF, $main-font, 50px, bold);
+                
+                @media(max-width: 400px) {
+                    font-size: 35px;
+                }
             }
 
             & > h2 {
                 @include text(#FFFFFF, $main-font, 28px, medium);
                 opacity: 40%;
-                line-height: 37px
+                line-height: 37px;
+
+                @media(max-width: 400px) {
+                    font-size: 20px;
+                }
             }
 
             & > h3 {
                 @include text(#FFFFFF, $main-font, 14px, normal);
                 line-height: 20px;
+
+                @media(max-width: 400px) {
+                    font-size: 10px;
+                }
             }
 
             & > p {
@@ -214,6 +242,10 @@
             font-size: 80px;
             font-weight: 500;
             transform: translate(0, 38px);
+
+            @media(max-width: 500px) {
+                font-size: 60px;
+            }
         }
 
         .question {
@@ -263,6 +295,10 @@
                 height: 210px;
                 margin-bottom: 100px;
                 margin-left: 40px;
+            }
+
+            @media(max-width: 500px) {
+                margin-left: 0;
             }
 
             
@@ -321,6 +357,7 @@
 
             @media(max-width: 650px) {
                 width: 455px;
+                padding-bottom: 15px;
             }
         }
 
@@ -328,6 +365,13 @@
             transform: translate(0, -20px);
             padding-left: 20px;
             transition: 0.3s;
+
+            @media(max-width: 650px) {
+                width: 50%;
+                height: 50%;
+                transform: translate(0, 40px);
+                padding-left: 30px;
+            }
         }
 
         .Card-Image:hover {
@@ -336,6 +380,7 @@
 
         .box-2-text {
             padding: 35px;
+            overflow: hidden;
             .top-text {
                 color: #FFFFFF;
                 margin-bottom: 23px;
@@ -355,6 +400,7 @@
                 font-size: 14px;
                 opacity: 70%;
                 line-height: 19px;
+                
 
                 @media(max-width: 650px) {
                     font-size: 10px;
@@ -408,6 +454,10 @@
                 @media(max-width: 1300px) {
                     margin-bottom: 40px;
                     margin-left: 40px;
+                }
+
+                @media(max-width: 500px) {
+                    margin-left: 0;
                 }
 
                 
@@ -547,6 +597,10 @@
                 @media(max-width: 600px) {
                     width: 380px;
                 }
+
+                @media(max-width: 435px) {
+                    width: 280px;
+                }
                 
                 .first-row {
                     display: flex;
@@ -564,6 +618,10 @@
 
                         @media(max-width: 600px) {
                             width: 180px;
+                        }
+
+                        @media(max-width: 435px) {
+                            width: 130px;
                         }
                     }
     
