@@ -150,6 +150,7 @@
 
                 @media(max-width: 400px) {
                     font-size: 10px;
+                    padding: 0 10px;
                 }
             }
 
@@ -161,6 +162,12 @@
             .Buttons {
                 display: flex;
                 align-items: center;
+
+                @media(max-width: 360px) {
+                    padding-top: 50px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
 
                 @media(max-width: 760px) {
                     justify-content: center;
@@ -177,6 +184,11 @@
                     font-weight: bold;
                     margin-right: 15px;
                     transition: 0.4s;
+
+                    @media(max-width: 360px) {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
                 }
     
                 .btn-2:hover {
@@ -233,6 +245,8 @@
     @include container($container-width);
     text-align: center;
     margin-bottom: 130px;
+
+    
     .container-Title {
         
         .bg-text {
@@ -582,6 +596,10 @@
 
             & > p {
                 margin-bottom: 23px;
+
+                @media(max-width: 1100px) {
+                    text-align: center;
+                }
             }
             .elements {
                 width: 720px;
