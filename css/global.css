@@ -337,12 +337,11 @@ a {
   width: 160px;
   height: 44px;
   border: none;
-  border-width: x;
-  color: x;
+  border-width: 0;
+  color: #FFFFFF;
   background-color: #19B5FE;
   border-radius: 4px;
   font-family: "Gilroy", sans-serif;
-  color: #FFFFFF;
   font-size: 14px;
   font-weight: bold;
   margin-right: 15px;
@@ -467,8 +466,8 @@ a {
   cursor: pointer;
   width: 120px;
   height: 30px;
-  border: x;
-  border-width: x;
+  border: 0;
+  border-width: #19B5FE;
   color: #19B5FE;
   background-color: transparent;
   border-radius: 4px;
@@ -1048,8 +1047,8 @@ a {
   cursor: pointer;
   width: 320px;
   height: 44px;
-  border: x;
-  border-width: x;
+  border: 0;
+  border-width: #FFFFFF;
   color: #FFFFFF;
   background-color: #19B5FE;
   border-radius: 4px;
