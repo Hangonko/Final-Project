@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .s-1 {
     position: fixed;
     top: 0;
@@ -12,9 +19,15 @@
         margin: 0 auto;
         @include container($container-width);
         height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         background-color: $bg-color;
 
         
@@ -44,14 +57,20 @@
         }
 
         & > ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             @media(max-width: 1075px) {
                 display: none;
             }
             
             & > li {
                 & > a {
+                    -webkit-transition: 0.3s;
+                    -o-transition: 0.3s;
                     transition: 0.3s;
                 }
 
@@ -89,6 +108,8 @@
         .btn-1 {
             @include button(120px, 44px, solid, 1px, #FFFFFF, transparent, 4px);
             font-family: $main-font;
+            -webkit-transition: 0.7s;
+            -o-transition: 0.7s;
             transition: 0.7s;
         }
 
@@ -105,20 +126,35 @@
     margin-top: 100px;
     .container-2 {
         @include container($container-width);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 22px;
 
         @media(max-width: 760px) {
-            justify-content: center;
-            transform: translate(0, 80px);
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-transform: translate(0, 80px);
+                -ms-transform: translate(0, 80px);
+                    transform: translate(0, 80px);
         }
         
 
         .left {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
             display: inline-flex;
-            flex-direction: column;
-            justify-content: space-between;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             max-width: 525px;
             height: 370px;
             
@@ -160,22 +196,37 @@
             }
 
             .Buttons {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
 
                 @media(max-width: 360px) {
                     padding-top: 50px;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
 
                 @media(max-width: 760px) {
-                    justify-content: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
                 .btn-2 {
+                    display: -webkit-inline-box;
+                    display: -ms-inline-flexbox;
                     display: inline-flex;
-                    justify-content: space-evenly;
-                    align-items: center;
+                    -webkit-box-pack: space-evenly;
+                        -ms-flex-pack: space-evenly;
+                            justify-content: space-evenly;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     padding: 0 30px;
                     @include button(160px, 44px, none, 0, 0, #19B5FE, 4px);
                     font-family: $main-font;
@@ -183,6 +234,8 @@
                     font-size: 14px;
                     font-weight: bold;
                     margin-right: 15px;
+                    -webkit-transition: 0.4s;
+                    -o-transition: 0.4s;
                     transition: 0.4s;
 
                     @media(max-width: 360px) {
@@ -197,12 +250,20 @@
                 }
     
                 .btn-3 {
+                    display: -webkit-inline-box;
+                    display: -ms-inline-flexbox;
                     display: inline-flex;
-                    justify-content: space-evenly;
-                    align-items: center;
+                    -webkit-box-pack: space-evenly;
+                        -ms-flex-pack: space-evenly;
+                            justify-content: space-evenly;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     padding: 0 30px;
                     @include button(160px, 44px, solid, 1px, #FFFFFF, transparent, 4px);
                     font-family: $main-font;
+                    -webkit-transition: 0.7s;
+                    -o-transition: 0.7s;
                     transition: 0.7s;
                 }
     
@@ -216,6 +277,8 @@
         }
 
         .Header-mouse {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
             display: inline-flex;
             max-width: 100%;
 
@@ -255,7 +318,9 @@
             font-family: $main-font;
             font-size: 80px;
             font-weight: 900;
-            transform: translate(0, 38px);
+            -webkit-transform: translate(0, 38px);
+                -ms-transform: translate(0, 38px);
+                    transform: translate(0, 38px);
 
             @media(max-width: 500px) {
                 font-size: 60px;
@@ -286,14 +351,23 @@
 
     .container-3 {
         @include container($container-width);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         text-align: center;
 
         @media(max-width: 1075px) {
-            justify-content: space-evenly;
-            flex-wrap: wrap;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
         }
         
         
@@ -318,7 +392,11 @@
             
 
             .card-photo-1 {
-                transform: translate(0, -85px);
+                -webkit-transform: translate(0, -85px);
+                    -ms-transform: translate(0, -85px);
+                        transform: translate(0, -85px);
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
                 transition: 0.3s;
 
                 @media(max-width: 1300px) {
@@ -332,12 +410,16 @@
                 font-size: 20px;
                 font-weight: bold;
                 color: #FFFFFF;
-                transform: translate(0, -95px);
+                -webkit-transform: translate(0, -95px);
+                    -ms-transform: translate(0, -95px);
+                        transform: translate(0, -95px);
             }
         }
 
         .card-photo-1:hover {
-            transform: translate(0, -100px);
+            -webkit-transform: translate(0, -100px);
+                -ms-transform: translate(0, -100px);
+                    transform: translate(0, -100px);
         }
     }
 }
@@ -352,18 +434,27 @@
 
     .container-4 {
         @include container($container-width);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
         @media(max-width: 1300px) {
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
         }
         
         .box-2 {
             cursor: pointer;
             width: 555px;
             height: 180px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             background-color: #393939;
             border-radius: 20px;
@@ -376,20 +467,28 @@
         }
 
         .Card-Image {
-            transform: translate(0, -20px);
+            -webkit-transform: translate(0, -20px);
+                -ms-transform: translate(0, -20px);
+                    transform: translate(0, -20px);
             padding-left: 20px;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
             transition: 0.3s;
 
             @media(max-width: 650px) {
                 width: 50%;
                 height: 50%;
-                transform: translate(0, 40px);
+                -webkit-transform: translate(0, 40px);
+                    -ms-transform: translate(0, 40px);
+                        transform: translate(0, 40px);
                 padding-left: 30px;
             }
         }
 
         .Card-Image:hover {
-            transform: translate(0, -30px);
+            -webkit-transform: translate(0, -30px);
+                -ms-transform: translate(0, -30px);
+                    transform: translate(0, -30px);
         }
 
         .box-2-text {
@@ -436,7 +535,8 @@
         padding: 10px 0;
 
         @media(max-width: 1300px) {
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
         }
     }
 
@@ -444,12 +544,19 @@
         @include container($container-width);
 
         .carousel-item-cards {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
 
             @media(max-width: 1300px) {
-                justify-content: space-evenly;
-                flex-wrap: wrap;
+                -webkit-box-pack: space-evenly;
+                    -ms-flex-pack: space-evenly;
+                        justify-content: space-evenly;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
                 padding: 0 40px;
             }
 
@@ -460,10 +567,21 @@
                 height: 240px;
                 background-color: #393939;
                 border-radius: 20px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
                 transition: 0.3s;
                 @media(max-width: 1300px) {
                     margin-bottom: 40px;
@@ -491,11 +609,15 @@
             }
 
             .carousel-card:hover {
-                transform: translate(0, -10px);
+                -webkit-transform: translate(0, -10px);
+                    -ms-transform: translate(0, -10px);
+                        transform: translate(0, -10px);
             }
         }
         .left-arrow {
-            transform: translate(-70px, 0);
+            -webkit-transform: translate(-70px, 0);
+                -ms-transform: translate(-70px, 0);
+                    transform: translate(-70px, 0);
             padding-left: 40px;
 
             @media(max-width: 1300px) {
@@ -504,7 +626,9 @@
         }
 
         .right-arrow {
-            transform: translate(70px, 0);
+            -webkit-transform: translate(70px, 0);
+                -ms-transform: translate(70px, 0);
+                    transform: translate(70px, 0);
             padding-right: 40px;
 
             @media(max-width: 1300px) {
@@ -525,18 +649,34 @@
     font-family: $main-font;
     .container-6 {
         @include container($container-width);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-bottom: 200px;
 
         @media(max-width: 1100px) {
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
         }
         .info {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
             display: inline-flex;
-            flex-direction: column;
-            justify-content: space-between;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 200px;
             height: 288px;
             margin-right: 220px;
@@ -557,8 +697,12 @@
             }
 
             .contact-info {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
 
                 @media(max-width: 1100px) {
                     margin: 0 auto;
@@ -584,8 +728,12 @@
 
             .icons-bundle {
                 cursor: pointer;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: space-between;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
                 color: #19B5FE;
             }
         }
@@ -604,9 +752,16 @@
             .elements {
                 width: 720px;
                 height: 406px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
 
                 @media(max-width: 796px) {
                     width: 520px;
@@ -621,8 +776,12 @@
                 }
                 
                 .first-row {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: space-between;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
         
                     .input-text {
                         @include input-text(350px, 52px, #393939, #5a5a5a);
@@ -662,8 +821,12 @@
                 }
 
                 .button-center {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                     .submit {
                         @include button(320px, 44px, 0, 0, #FFFFFF, #19B5FE, 4px);
                         font-weight: bold;
@@ -682,13 +845,18 @@ footer {
     font-family: $main-font;
     .footer-container {
         @include container($container-width);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding-top: 60px;
         border-bottom: 1px solid #6b6b6b;
 
         @media(max-width: 796px) {
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
             
         }
         .footer-column {
@@ -713,6 +881,8 @@ footer {
 
     a {
         color: #6b6b6b;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
     }
 
