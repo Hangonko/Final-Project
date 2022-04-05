@@ -1,6 +1,10 @@
 @mixin container($Width) {
     max-width: $Width;
     margin: 0 auto;
+
+    @media(max-width: 1300px) {
+        max-width: 90%;
+    }
 }
 
 @mixin text($color, $font, $font-size, $font-weight) {
@@ -8,6 +12,8 @@
     font-family: $font;
     font-size: $font-size;
     font-weight: $font-weight;
+
+    
 }
 
 @mixin button($btn-width, $btn-height, $border-type, $border-width, $color, $btn-bg, $brdr-radius) {
@@ -27,4 +33,10 @@
     border: none;
     background-color: $input-bg-color;
     color: $input-text-color;
+
+    @media(max-width: 1300px) {
+        max-width: 100%;
+    }
+
+    
 }
