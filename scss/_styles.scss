@@ -337,7 +337,7 @@
 
         .View-more {
         vertical-align: center;
-            @include button(120px, 30px, 0, #19B5FE, #19B5FE, transparent, 4px);
+            @include button(120px, 30px, 0, #19B5FE, transparent, 4px);
             font-family: $main-font;
             font-size: 14px;
             letter-spacing: 1px;
@@ -827,7 +827,7 @@
                         -ms-flex-pack: center;
                             justify-content: center;
                     .submit {
-                        @include button(320px, 44px, 0, #FFFFFF, #FFFFFF, #19B5FE, 4px);
+                        @include button(320px, 44px, 0, #FFFFFF, #19B5FE, 4px);
                         font-weight: bold;
                     }
                 }
