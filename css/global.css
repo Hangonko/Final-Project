@@ -260,7 +260,7 @@ a {
   color: #FFFFFF;
   font-family: "Gilroy", sans-serif;
   font-size: 28px;
-  font-weight: medium;
+  font-weight: 300;
   opacity: 40%;
   line-height: 37px;
 }
@@ -337,8 +337,8 @@ a {
   width: 160px;
   height: 44px;
   border: none;
-  border-width: 0;
-  color: 0;
+  border-width: x;
+  color: x;
   background-color: #19B5FE;
   border-radius: 4px;
   font-family: "Gilroy", sans-serif;
@@ -467,8 +467,8 @@ a {
   cursor: pointer;
   width: 120px;
   height: 30px;
-  border: 0;
-  border-width: 0;
+  border: x;
+  border-width: x;
   color: #19B5FE;
   background-color: transparent;
   border-radius: 4px;
@@ -1048,8 +1048,8 @@ a {
   cursor: pointer;
   width: 320px;
   height: 44px;
-  border: 0;
-  border-width: 0;
+  border: x;
+  border-width: x;
   color: #FFFFFF;
   background-color: #19B5FE;
   border-radius: 4px;
