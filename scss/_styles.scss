@@ -1,21 +1,20 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 .s-1 {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
     padding-bottom: 100px;
+    background-color: $bg-color;
 
     
     
     .container {
-        
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
         margin: 0 auto;
         @include container($container-width);
         height: 100px;
@@ -28,7 +27,7 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        background-color: $bg-color;
+        
 
         
         
@@ -228,7 +227,7 @@
                         -ms-flex-align: center;
                             align-items: center;
                     padding: 0 30px;
-                    @include button(160px, 44px, solid, 0px, #393939, #19B5FE, 4px);
+                    @include button(160px, 44px, solid, 0, #393939, #19B5FE, 4px);
                     font-family: $main-font;
                     font-size: 14px;
                     font-weight: bold;
@@ -333,15 +332,16 @@
             font-weight: 500;
             letter-spacing: 1px;
             margin-bottom: 20px;
+            z-index: 1;
         }
 
         .View-more {
         vertical-align: center;
-            @include button(120px, 30px, solid, 0px, #393939, #19B5FE, transparent, 4px);
+            @include button(120px, 44px, 0, 0, #19B5FE, transparent, 4px);
             font-family: $main-font;
             font-size: 14px;
             letter-spacing: 1px;
-            
+            z-index: 1;
         }
     }
 }
@@ -427,6 +427,10 @@
     width: 1px;
     height: 1px;
     margin-bottom: 160px;
+
+    @media(max-width: 1075px) {
+        margin-bottom: 60px;
+    }
 }
 
 .s-4 {
@@ -474,9 +478,11 @@
             -o-transition: 0.3s;
             transition: 0.3s;
 
+            
+
             @media(max-width: 650px) {
-                width: 50%;
-                height: 50%;
+                width: 65%;
+                height: 65%;
                 -webkit-transform: translate(0, 40px);
                     -ms-transform: translate(0, 40px);
                         transform: translate(0, 40px);
@@ -514,8 +520,9 @@
                 line-height: 19px;
                 
 
-                @media(max-width: 650px) {
+                @media(max-width: 400px) {
                     font-size: 10px;
+                    line-height: 10px;
                 }
             }
         }
@@ -526,6 +533,10 @@
     width: 1px;
     height: 1px;
     margin-bottom: 230px;
+
+    @media(max-width: 1075px) {
+        margin-bottom: 80px;
+    }
 }
 
 .s-5 {
@@ -641,6 +652,10 @@
     width: 1px;
     height: 1px;
     margin-bottom: 160px;
+
+    @media(max-width: 1075px) {
+        margin-bottom: 80px;
+    }
 }
 
 .s-6 {
