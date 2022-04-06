@@ -342,7 +342,7 @@ a {
   height: 44px;
   border: solid;
   border-width: 0;
-  color: #393939;
+  color: #FFFFFF;
   background-color: #19B5FE;
   border-radius: 4px;
   font-family: "Gilroy", sans-serif;
@@ -463,7 +463,6 @@ a {
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  z-index: 1;
 }
 
 .Title .container-Title .View-more {
@@ -627,21 +626,27 @@ a {
   padding-left: 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100%;
 }
 
 @media (max-width: 650px) {
   .s-4 .container-4 .Card-Image {
-    width: 65%;
     height: 65%;
-    -webkit-transform: translate(0, 40px);
-    transform: translate(0, 40px);
-    padding-left: 30px;
+    -webkit-transform: translate(0, 35px);
+    transform: translate(0, 35px);
   }
 }
 
 .s-4 .container-4 .Card-Image:hover {
   -webkit-transform: translate(0, -30px);
   transform: translate(0, -30px);
+}
+
+@media (max-width: 650px) {
+  .s-4 .container-4 .Card-Image:hover {
+    -webkit-transform: translate(0, 25px);
+    transform: translate(0, 25px);
+  }
 }
 
 .s-4 .container-4 .box-2-text {
@@ -759,13 +764,12 @@ a {
 @media (max-width: 1300px) {
   .s-5 .container-5 .carousel-item-cards .carousel-card {
     margin-bottom: 40px;
-    margin-left: 40px;
   }
 }
 
 @media (max-width: 500px) {
   .s-5 .container-5 .carousel-item-cards .carousel-card {
-    margin-left: 0;
+    margin-left: 0px;
   }
 }
 
@@ -1074,10 +1078,17 @@ a {
   height: 44px;
   border: solid;
   border-width: 0px;
-  color: #393939;
+  color: #FFFFFF;
   background-color: #19B5FE;
   border-radius: 4px;
   font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.s-6 .container-6 .forms .elements .button-center .submit:hover {
+  background-color: #FFFFFF;
+  color: black;
 }
 
 footer {
