@@ -483,6 +483,7 @@
             @media(max-width: 650px) {
                 width: 65%;
                 height: 65%;
+                aspect-ratio: 1/0.8;
                 -webkit-transform: translate(0, 35px);
                 -ms-transform: translate(0, 35px);
                     transform: translate(0, 35px);

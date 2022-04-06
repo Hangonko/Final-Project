@@ -633,6 +633,7 @@ a {
   .s-4 .container-4 .Card-Image {
     width: 65%;
     height: 65%;
+    aspect-ratio: 1/0.8;
     -webkit-transform: translate(0, 35px);
     transform: translate(0, 35px);
   }
