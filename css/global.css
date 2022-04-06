@@ -446,6 +446,7 @@ a {
   font-family: "Gilroy", sans-serif;
   font-size: 80px;
   font-weight: 900;
+  -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform: translate(0, 38px);
   transform: translate(0, 38px);
 }
