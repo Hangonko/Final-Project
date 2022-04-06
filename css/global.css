@@ -631,6 +631,7 @@ a {
 
 @media (max-width: 650px) {
   .s-4 .container-4 .Card-Image {
+    width: 100%;
     height: 65%;
     -webkit-transform: translate(0, 35px);
     transform: translate(0, 35px);
