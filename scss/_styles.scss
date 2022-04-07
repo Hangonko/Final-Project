@@ -123,6 +123,9 @@
 
 .s-2 {
     margin-top: 100px;
+    @media(max-width: 760px) {
+        margin-top: 5%;
+    }
     .container-2 {
         @include container($container-width);
         display: -webkit-box;
@@ -140,7 +143,11 @@
             -webkit-transform: translate(0, 80px);
                 -ms-transform: translate(0, 80px);
                     transform: translate(0, 80px);
+
+            flex-direction: column-reverse;
         }
+
+        
         
 
         .left {
@@ -289,7 +296,8 @@
             }
 
             @media(max-width: 760px) {
-                display: none;
+                max-width: 70%;
+                transform: translate(-7%, 0);
             }
         }
 
