@@ -446,9 +446,7 @@ a {
   font-family: "Gilroy", sans-serif;
   font-size: 80px;
   font-weight: 900;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate(0, 38px);
-  transform: translate(0, 38px);
+  margin-bottom: 20px;
 }
 
 @media (max-width: 500px) {
@@ -463,7 +461,8 @@ a {
   font-size: 28px;
   font-weight: 500;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  -webkit-transform: translate(0, 85px);
+  transform: translate(0, 85px);
 }
 
 .Title .container-Title .View-more {
