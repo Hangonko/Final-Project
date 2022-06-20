@@ -54,8 +54,13 @@
         .Logo {
             cursor: pointer;
         }
+        .Logo.active {
+            @media(max-width: 1075px) {
+                display: none;
+            }
+        }
 
-        & > ul {
+        .navUL {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -65,6 +70,10 @@
             @media(max-width: 1075px) {
                 display: none;
             }
+
+            .active {
+                display: flex;
+            }
             
             & > li {
                 & > a {
@@ -73,12 +82,21 @@
                     transition: 0.3s;
                 }
 
+                @media(max-width: 1075px) {
+                    margin-top: 20px;
+                    text-align: center;
+                }
+
                 & > a:hover {
                     font-weight: bold;
                     color: #19B5FE;
                     opacity: 100%;
                     padding: 38px 0;
                     border-bottom: 4px solid #19B5FE;
+
+                    @media(max-width: 1075px) {
+                        border-bottom: 0px solid #19B5FE;
+                    }
                 }
 
                 .fa-bars {
@@ -95,6 +113,19 @@
             }
         }
 
+        .navUL.active {
+            @media(max-width: 1075px) {
+                display: flex;
+                background-color: $bg-color;
+                margin: 0 auto;
+                flex-direction: column;
+                margin-top: 200px;
+                justify-content: center;
+                border-radius: 25px;
+                width: 100%;
+            }
+        }
+
         .nav-links {
             color: #FFFFFF;
             margin-right: 60px;
@@ -102,6 +133,11 @@
             font-weight: normal;
             font-size: 14px;
             opacity: 60%;
+
+            @media(max-width: 1075px) {
+                margin-right: 0;
+                width: 100%;
+            }
         }
 
         .btn-1 {
@@ -110,6 +146,10 @@
             -webkit-transition: 0.7s;
             -o-transition: 0.7s;
             transition: 0.7s;
+
+            @media(max-width: 1075px) {
+                margin-top: 20px;
+            }
         }
 
         .btn-1:hover {
@@ -163,6 +203,10 @@
                     justify-content: space-between;
             max-width: 525px;
             height: 370px;
+
+            @media(max-width: 1031px) {
+                height: 390px;
+            }
             
             @media(max-width: 760px) {
                 text-align: center;
